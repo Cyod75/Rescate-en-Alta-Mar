@@ -1,0 +1,154 @@
+{
+  "gameTitle": {
+    "es": "Rescate en Alta Mar",
+    "en": "Rescue on the High Seas",
+    "pt": "Resgate em Alto Mar",
+    "zh": "海上救援"
+  },
+  "modal": {
+    "title1": {
+      "es": "Configuración",
+      "en": "Settings",
+      "pt": "Configurações",
+      "zh": "设置"
+    },
+    "title2": {
+      "es": "Información",
+      "en": "Information",
+      "pt": "Informação",
+      "zh": "信息"
+    },
+    "keys": {
+      "A": {
+        "es": "Esta es la tecla <strong>A</strong>. Se usa para moverte a la izquierda.",
+        "en": "This is the <strong>A</strong> key. It is used to move to the left.",
+        "pt": "Esta é a tecla <strong>A</strong>. É usada para mover para a esquerda.",
+        "zh": "这是 <strong>A</strong> 键。用于向左移动。"
+      },
+      "W": {
+        "es": "Esta es la tecla <strong>W</strong>. Se usa para moverte hacia adelante.",
+        "en": "This is the <strong>W</strong> key. It is used to move forward.",
+        "pt": "Esta é a tecla <strong>W</strong>. É usada para mover para frente.",
+        "zh": "这是 <strong>W</strong> 键。用于向前移动。"
+      },
+      "S": {
+        "es": "Esta es la tecla <strong>S</strong>. Se usa para moverte hacia atrás.",
+        "en": "This is the <strong>S</strong> key. It is used to move backward.",
+        "pt": "Esta é a tecla <strong>S</strong>. É usada para mover para trás.",
+        "zh": "这是 <strong>S</strong> 键。用于向后移动。"
+      },
+      "D": {
+        "es": "Esta es la tecla <strong>D</strong>. Se usa para moverte a la derecha.",
+        "en": "This is the <strong>D</strong> key. It is used to move to the right.",
+        "pt": "Esta é a tecla <strong>D</strong>. É usada para mover para a direita.",
+        "zh": "这是 <strong>D</strong> 键。用于向右移动。"
+      },
+      "Q": {
+        "es": "Esta es la tecla <strong>Q</strong>. Se usa para acciones secundarias.",
+        "en": "This is the <strong>Q</strong> key. It is used for secondary actions.",
+        "pt": "Esta é a tecla <strong>Q</strong>. É usada para ações secundárias.",
+        "zh": "这是 <strong>Q</strong> 键。用于次要操作。"
+      },
+      "E": {
+        "es": "Esta es la tecla <strong>E</strong>. Se usa para interactuar con objetos.",
+        "en": "This is the <strong>E</strong> key. It is used to interact with objects.",
+        "pt": "Esta é a tecla <strong>E</strong>. É usada para interagir com objetos.",
+        "zh": "这是 <strong>E</strong> 键。用于与物体互动。"
+      },
+      "F": {
+        "es": "Esta es la tecla <strong>F</strong>. Se usa para acciones rápidas.",
+        "en": "This is the <strong>F</strong> key. It is used for quick actions.",
+        "pt": "Esta é a tecla <strong>F</strong>. É usada para ações rápidas.",
+        "zh": "这是 <strong>F</strong> 键。用于快速操作。"
+      },
+      "SPACE": {
+        "es": "Esta es la tecla <strong>SPACE</strong>. Se usa para saltar.",
+        "en": "This is the <strong>SPACE</strong> key. It is used to jump.",
+        "pt": "Esta é a tecla <strong>SPACE</strong>. É usada para pular.",
+        "zh": "这是 <strong>SPACE</strong> 键。用于跳跃。"
+      },
+      "ENTER": {
+        "es": "Esta es la tecla <strong>ENTER</strong>. Se usa para confirmar acciones o avanzar.",
+        "en": "This is the <strong>ENTER</strong> key. It is used to confirm actions or proceed.",
+        "pt": "Esta é a tecla <strong>ENTER</strong>. É usada para confirmar ações ou avançar.",
+        "zh": "这是 <strong>ENTER</strong> 键。用于确认操作或继续。"
+      }
+    },
+    "objective": {
+      "title": {
+        "es": "Objetivo del Juego",
+        "en": "Game Objective",
+        "pt": "Objetivo do Jogo",
+        "zh": "游戏目标"
+      },
+      "description": {
+        "es": "El objetivo del juego es conseguir el máximo de puntos posibles, matando al kraken o llevando al naufrago a las islas. Ten cuidado que el kraken no lo atrape, tu objetivo es superarte a ti mismo en puntos.",
+        "en": "The goal of the game is to get as many points as possible by killing the kraken or taking the castaway to the islands. Be careful that the kraken does not catch you, your goal is to surpass yourself in points.",
+        "pt": "O objetivo do jogo é conseguir o máximo de pontos possível, matando o kraken ou levando o náufrago para as ilhas. Cuidado para o kraken não te pegar, seu objetivo é se superar em pontos.",
+        "zh": "游戏的目标是通过杀死海怪或将漂流者带到岛屿上来获得尽可能多的分数。小心不要让海怪抓住你，你的目标是在分数上超越自己。"
+      },
+      "character": {
+        "es": "Este es tu personaje. ¡Muévete con las teclas para evitar enemigos y conseguir puntos!",
+        "en": "This is your character. Move with the keys to avoid enemies and earn points!",
+        "pt": "Este é o seu personagem. Movimente-se com as teclas para evitar inimigos e ganhar pontos!",
+        "zh": "这是你的角色。使用按键移动以避开敌人并获得分数！"
+      },
+      "kraken": {
+        "es": "Este es el <strong>Kraken</strong>. ¡Evítalo o derrótalo para avanzar o ganar puntos!",
+        "en": "This is the <strong>Kraken</strong>. Avoid or defeat it to advance or earn points!",
+        "pt": "Este é o <strong>Kraken</strong>. Evite-o ou derrote-o para avançar ou ganhar pontos!",
+        "zh": "这是 <strong>海怪</strong>。避开或击败它以前进或获得分数！"
+      },
+      "castaway": {
+        "es": "Este es un naufrago. ¡Interactúa con él para ganar puntos!",
+        "en": "This is a castaway. Interact with him to earn points!",
+        "pt": "Este é um náufrago. Interaja com ele para ganhar pontos!",
+        "zh": "这是一个漂流者。与他互动以获得分数！"
+      },
+      "jellyfish": {
+        "es": "Esta es una <strong>medusa</strong>. ¡Ten cuidado, es venenosa!",
+        "en": "This is a <strong>jellyfish</strong>. Be careful, it is poisonous!",
+        "pt": "Esta é uma <strong>medusa</strong>. Cuidado, é venenosa!",
+        "zh": "这是一只<strong>水母</strong>。小心，它有毒！"
+      },
+      "bomb": {
+        "es": "Esta es una bomba. ¡Úsala para matar al kraken!",
+        "en": "This is a bomb. Use it to kill the kraken!",
+        "pt": "Esta é uma bomba. Use-a para matar o kraken!",
+        "zh": "这是一颗炸弹。用它来杀死海怪！"
+      },
+      "chest": {
+        "es": "Este es un cofre. ¡Ábrelo para obtener recompensas!",
+        "en": "This is a chest. Open it to get rewards!",
+        "pt": "Este é um baú. Abra-o para obter recompensas!",
+        "zh": "这是一个宝箱。打开它以获得奖励！"
+      }
+    }
+  },
+  "canvasText": {
+    "startGame": {
+      "es": "INICIAR JUEGO",
+      "en": "START GAME",
+      "pt": "INICIAR JOGO",
+      "zh": "开始游戏"
+    },
+    "pressEnter": {
+      "es": "\"Intro\" para Iniciar",
+      "en": "\"Enter\" to Start",
+      "pt": "\"Enter\" para Iniciar",
+      "zh": "按 \"回车\" 开始"
+    },
+    "gameOver": {
+      "es": "FIN DEL JUEGO",
+      "en": "GAME OVER",
+      "pt": "FIM DE JOGO",
+      "zh": "游戏结束"
+    },
+    "pressEnterReset": {
+      "es": "\"Intro\" para Reiniciar",
+      "en": "\"Enter\" to Reset",
+      "pt": "\"Enter\" para Reiniciar",
+      "zh": "按 \"回车\" 重置"
+    }
+  }
+}

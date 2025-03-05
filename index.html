@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es"> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <title id="pageTitle">Rescue on the High Seas</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <script src="./libraries/p5.min.js"></script>
+    <script src="./libraries/p5.sound.min.js"></script>
+    <script src="./js/Board.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./js/Cell.js"></script>
+    <script src="./js/Life.js"></script>
+    <script src="./js/Enemy.js"></script>
+    <script src="./js/Person.js"></script>
+    <script src="./js/Counter.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+  </head>
+
+  <body>
+     <div id="welcome-screen"></div> 
+
+    <!-- Botones de cambio de idioma -->
+    <div id="language-buttons">
+        <button id="lang-es"><img src="./image/Spain.png" alt="Español"></button>
+        <button id="lang-pt"><img src="./image/Portugal.png" alt="Portugués"></button>
+        <button id="lang-en"><img src="./image/EEUU.png" alt="Inglés"></button>
+        <button id="lang-zh"><img src="./image/China.png" alt="Chino"></button>
+      </div>
+
+      <div id="game">
+        <h1 id="gameTitle">Rescate en Alta Mar</h1>
+        <!-- Contador -->
+        <div id="counter">0000</div>
+        <div id="counterRecord">/ 0000</div>
+    
+        <!-- Inventario -->
+        <div id="inventory">
+            <div class="inventory-item">
+                <img src="./image/bomb_icon.png" alt="bomb icon">
+                <span id="bomb-count">2</span>
+            </div>
+            <div class="inventory-item">
+                <img src="./image/jump_icon.png" alt="jump icon">
+                <span id="jump-count">2</span>
+            </div>
+        </div>
+    
+        <img id="life" src="./image/life100.png" alt="life">
+    </div>
+    
+
+        <div id="icons">
+            <a>
+                <img id="compass" src="./image/compass.png" alt="compass">
+            </a>
+          
+            <div id="iconos">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                    <img id="setting" src="./image/setting.png" alt="setting">
+                </a>
+                
+                <a href="#" data-bs-toggle="modal" data-bs-target="#infoModal">
+                    <img id="info" src="./image/info.png" alt="info">
+                </a>
+                
+                <a href="#"> 
+                    <img onclick="checkStartGame()" id="reload" src="./image/reload.png" alt="reload">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-modal">
+                    <h2 class="modal-title fs-5" id="settingsModalLabel">Configuración</h2> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-modal bg-pirate">
+                    <div class="sound-option">
+                        <img class="icon" src="./image/music.png" alt="music">
+                        <a href="#"> 
+                            <img onclick="countMusic()" id="button1" class="toggle-img" src="./image/off.png" alt="off1">
+                        </a>
+                    </div>
+                    <div class="sound-option">
+                        <img class="icon" src="./image/sound.png" alt="sound">
+                        <a href="#"> 
+                            <img onclick="countSound()" id="button2" class="toggle-img" src="./image/off.png" alt="off2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="infoModalLabel">Información</h2> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Sección de teclas -->
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/A.png" alt="Tecla A">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyA">Esta es la tecla <strong>A</strong>. Se usa para moverte a la izquierda.</p> 
+                        </div>  
+                    </div>
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/W.png" alt="Tecla W">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyW">Esta es la tecla <strong>W</strong>. Se usa para moverte hacia adelante.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/S.png" alt="Tecla S">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyS">Esta es la tecla <strong>S</strong>. Se usa para moverte hacia atrás.</p> 
+                        </div>
+                    </div>
+
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/D.png" alt="Tecla D">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyD">Esta es la tecla <strong>D</strong>. Se usa para moverte a la derecha.</p> 
+                        </div>
+                    </div>
+
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/Q.png" alt="Tecla Q">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyQ">Esta es la tecla <strong>Q</strong>. Se usa para acciones secundarias.</p> 
+                        </div>
+                    </div>
+
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/E.png" alt="Tecla E">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyE">Esta es la tecla <strong>E</strong>. Se usa para interactuar con objetos.</p> 
+                        </div>
+                    </div>
+
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/F.png" alt="Tecla F">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyF">Esta es la tecla <strong>F</strong>. Se usa para acciones rápidas.</p> 
+                        </div>
+                    </div>
+
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/SPACE.png" alt="Tecla SPACE">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keySPACE">Esta es la tecla <strong>SPACE</strong>. Se usa para saltar.</p> 
+                        </div>
+                    </div>
+
+                    <div class="modal-content-wrapper">
+                        <div class="modal-image">
+                            <img src="./image/ENTER.png" alt="Tecla ENTER">
+                        </div>
+                        <div class="modal-text">
+                            <p id="keyENTER">Esta es la tecla <strong>ENTER</strong>. Se usa para confirmar acciones o avanzar.</p> 
+                        </div>
+                    </div>
+
+                    <hr style="border-top: 2px solid black; margin: 20px 0;">
+
+                    <!-- Sección del objetivo del juego -->
+                    <div class="modal-objective">
+                        <h3 class="fs-5" id="objectiveTitle">Objetivo del Juego</h3>
+                        <p id="objectiveDescription">
+                            El objetivo del juego es conseguir el maximo de puntos posibles, matando al kraken o llevando 
+                            al naufrago a las islas, ten  cuidado que el kraken no lo atrape, tu objetivo es superarte a ti mismo en puntos
+                        </p> 
+
+                        <div class="modal-objective-wrapper">
+                            <div class="modal-objective-image">
+                                <img src="./textures/character_right.png" alt="Personaje principal">
+                            </div>
+                            <div class="modal-objective-text">
+                                <p id="characterDescription">Este es tu personaje. ¡Muévete con las teclas para evitar enemigos y conseguir puntos!</p> 
+                            </div>
+                        </div>
+
+                        <div class="modal-objective-wrapper">
+                            <div class="modal-objective-image">
+                                <img src="./textures/kraken1.png" alt="Kraken enemigo">
+                            </div>
+                            <div class="modal-objective-text">
+                                <p id="krakenDescription">Este es el <strong>Kraken</strong>. ¡Evítalo o derrótalo para avanzar o ganar puntos!</p> 
+                            </div>
+                        </div>
+
+                        <div class="modal-objective-wrapper">
+                            <div class="modal-objective-image">
+                                <img src="./textures/person.png" alt="Aliado">
+                            </div>
+                            <div class="modal-objective-text">
+                                <p id="castawayDescription">Este es un naufrago. ¡Interactúa con él para ganar puntos!</p> 
+                            </div>
+                        </div>
+
+                        <div class="modal-objective-wrapper">
+                            <div class="modal-objective-image">
+                                <img src="./textures/jellyfish_inf.png" alt="Medusa enemiga">
+                            </div>
+                            <div class="modal-objective-text">
+                                <p id="jellyfishDescription">Esta es una <strong>medusa</strong>. ¡Ten cuidado, es venenosa!</p> 
+                            </div>
+                        </div>
+
+                        <div class="modal-objective-wrapper">
+                            <div class="modal-objective-image">
+                                <img src="./textures/bomb_inf.png" alt="Bomba">
+                            </div>
+                            <div class="modal-objective-text">
+                                <p id="bombDescription">Esta es una bomba. ¡Úsala para matar al kraken!</p>
+                            </div>
+                        </div>
+
+                        <div class="modal-objective-wrapper">
+                            <div class="modal-objective-image">
+                                <img src="./textures/chestClose_inf.png" alt="Cofre cerrado">
+                            </div>
+                            <div class="modal-objective-text">
+                                <p id="chestDescription">Este es un cofre. ¡Ábrelo para obtener recompensas!</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/sketch.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
