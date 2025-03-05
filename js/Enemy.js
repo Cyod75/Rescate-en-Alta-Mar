@@ -16,10 +16,10 @@ class Enemy {
 
     spawn() {
         //Prueba Enemigo
-        this.x = player.x+5
-        this.y = player.y+5
+        /*this.x = player.x+5
+        this.y = player.y+5*/
         
-        /*do {
+        do {
             this.x = Math.floor(Math.random() * this.board.width);
             this.y = Math.floor(Math.random() * this.board.height);
         } while (
@@ -30,7 +30,7 @@ class Enemy {
             this.board.cells[this.x + 1][this.y].island ||
             this.board.cells[this.x][this.y] instanceof Jellyfish ||
             this.board.cells[this.x][this.y] instanceof ChestClose
-        );*/   
+        );   
     }
 
     cryKraken() {

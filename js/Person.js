@@ -9,9 +9,9 @@ class Person{
     } 
 
     spawn() {
-        this.x = player.x-5
-        this.y = player.y-5
-        /*do {
+        /*his.x = player.x-5
+        this.y = player.y-5*/
+        do {
             this.x = Math.floor(Math.random() * this.board.width);
             this.y = Math.floor(Math.random() * this.board.height);
         } while (
@@ -22,7 +22,7 @@ class Person{
             this.board.cells[this.x + 1][this.y].island ||
             this.board.cells[this.x][this.y] instanceof Jellyfish ||
             this.board.cells[this.x][this.y] instanceof ChestClose
-        );*/
+        );
         
         
     }
