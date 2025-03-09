@@ -88,39 +88,39 @@
         "zh": "游戏的目标是通过杀死海怪或将漂流者带到岛屿上来获得尽可能多的分数。小心不要让海怪抓住你，你的目标是在分数上超越自己。"
       },
       "character": {
-        "es": "Este es tu personaje. ¡Muévete con las teclas para evitar enemigos y conseguir puntos!",
-        "en": "This is your character. Move with the keys to avoid enemies and earn points!",
-        "pt": "Este é o seu personagem. Movimente-se com as teclas para evitar inimigos e ganhar pontos!",
+        "es": "Este es tu Personaje. ¡Muévete con las teclas para evitar enemigos y conseguir puntos!",
+        "en": "This is your Character. Move with the keys to avoid enemies and earn points!",
+        "pt": "Este é o seu Personagem. Movimente-se com as teclas para evitar inimigos e ganhar pontos!",
         "zh": "这是你的角色。使用按键移动以避开敌人并获得分数！"
       },
       "kraken": {
-        "es": "Este es el <strong>Kraken</strong>. ¡Evítalo o derrótalo para avanzar o ganar puntos!",
-        "en": "This is the <strong>Kraken</strong>. Avoid or defeat it to advance or earn points!",
-        "pt": "Este é o <strong>Kraken</strong>. Evite-o ou derrote-o para avançar ou ganhar pontos!",
-        "zh": "这是 <strong>海怪</strong>。避开或击败它以前进或获得分数！"
+        "es": "Este es el Kraken. ¡Evítalo o derrótalo para avanzar o ganar puntos!",
+        "en": "This is the Kraken. Avoid or defeat it to advance or earn points!",
+        "pt": "Este é o Kraken. Evite-o ou derrote-o para avançar ou ganhar pontos!",
+        "zh": "这是 海怪。避开或击败它以前进或获得分数！"
       },
       "castaway": {
-        "es": "Este es un naufrago. ¡Interactúa con él para ganar puntos!",
-        "en": "This is a castaway. Interact with him to earn points!",
-        "pt": "Este é um náufrago. Interaja com ele para ganhar pontos!",
+        "es": "Este es un Naufrago. ¡Interactúa con él para ganar puntos!",
+        "en": "This is a Castaway. Interact with him to earn points!",
+        "pt": "Este é um Náufrago. Interaja com ele para ganhar pontos!",
         "zh": "这是一个漂流者。与他互动以获得分数！"
       },
       "jellyfish": {
-        "es": "Esta es una <strong>medusa</strong>. ¡Ten cuidado, es venenosa!",
-        "en": "This is a <strong>jellyfish</strong>. Be careful, it is poisonous!",
-        "pt": "Esta é uma <strong>medusa</strong>. Cuidado, é venenosa!",
-        "zh": "这是一只<strong>水母</strong>。小心，它有毒！"
+        "es": "Esta es una Medusa. ¡Ten cuidado, es venenosa!",
+        "en": "This is a Jellyfish. Be careful, it is poisonous!",
+        "pt": "Esta é uma Medusa. Cuidado, é venenosa!",
+        "zh": "这是一只水母。小心，它有毒！"
       },
       "bomb": {
-        "es": "Esta es una bomba. ¡Úsala para matar al kraken!",
-        "en": "This is a bomb. Use it to kill the kraken!",
-        "pt": "Esta é uma bomba. Use-a para matar o kraken!",
+        "es": "Esta es una Bomba. ¡Úsala para matar al kraken!",
+        "en": "This is a Bomb. Use it to kill the kraken!",
+        "pt": "Esta é uma Bomba. Use-a para matar o kraken!",
         "zh": "这是一颗炸弹。用它来杀死海怪！"
       },
       "chest": {
-        "es": "Este es un cofre. ¡Ábrelo para obtener recompensas!",
-        "en": "This is a chest. Open it to get rewards!",
-        "pt": "Este é um baú. Abra-o para obter recompensas!",
+        "es": "Este es un Cofre. ¡Ábrelo para obtener recompensas!",
+        "en": "This is a Chest. Open it to get rewards!",
+        "pt": "Este é um Baú. Abra-o para obter recompensas!",
         "zh": "这是一个宝箱。打开它以获得奖励！"
       }
     }
